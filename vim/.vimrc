@@ -32,6 +32,7 @@ let g:airline_symbols.linenr = ''
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'kien/ctrlp.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
@@ -45,6 +46,12 @@ Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

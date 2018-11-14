@@ -21,3 +21,6 @@ ele pede para mudar o encoding para utf-8 no .vimrc
 instalar a fonte DejaVu e mudar no termite
 
 ln /home/alanleite/projetos/dotfiles/vim/.vimrc /home/alanleite/.vimrc
+
+instalar o ag para usar com o ctrlp
+yay community/the_silver_searcher
