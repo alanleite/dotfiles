@@ -1,4 +1,6 @@
 
+# vim
+
 install vim-plug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -24,3 +26,16 @@ ln /home/alanleite/projetos/dotfiles/vim/.vimrc /home/alanleite/.vimrc
 
 instalar o ag para usar com o ctrlp
 yay community/the_silver_searcher
+
+# termite
+
+~/.config/termite/config
+
+instalar fonte 
+yay ttf-dejavu 
+
+ln /home/alanleite/projetos/dotfiles/termite/config /home/alanleite/.config/termite/config
+
+# ternjs
+
+ln ${HOME}/projetos/dotfiles/ternjs/.tern-config ${HOME}/.tern-config
